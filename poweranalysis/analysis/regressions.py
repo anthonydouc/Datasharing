@@ -113,7 +113,7 @@ def ols_model(data: pd.DataFrame):
 
     y, x = data['Effect size'], np.ones(n)
 
-    weights, groups = np.zeros(len(y)), data['Study no.'].values
+    weights, groups = np.ones(len(y)), data['Study no.'].values
 
     return clustered_wls(x, y, weights, groups)
 
