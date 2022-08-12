@@ -17,17 +17,6 @@ def generate_subset(all_data: pd.DataFrame, journals: list) -> pd.DataFrame:
 
     data_sub = all_data[all_data['Journal'].isin(journals)]
 
-    data_sub['No. obs year'] = (data_sub
-                                .groupby('Year published')
-                                .transform('count')['Obs id'])
-
-    data_sub['No. obs journal'] = (all_data
-                                   .groupby(['Year published', 'Journal'])
-                                   .transform('count')['Obs id'])
-
-    data_sub['Share'] = (data_sub['No. obs journal']
-                         / data_sub['No. obs year'])
-
     return data_sub
 
 

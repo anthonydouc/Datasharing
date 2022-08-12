@@ -112,9 +112,6 @@ def filter_for_reporting(data):
                  'significant',
                  'Power_gt_29',
                  'Sig_pow_29',
-                 'No. obs year',
-                 'No. obs journal',
-                 'Share',
                  'index'
                  ]
 
