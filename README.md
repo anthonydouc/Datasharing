@@ -9,7 +9,7 @@ This repository contains the python code used in the paper **The Significance of
 
 #### Using the default anaconda environment
 
-Navigate to model-apps repository and create install the virtual environment:
+Navigate to your local copy of the repository and install the virtual environment:
 ```
 conda env create -f environment.yaml
 ```
