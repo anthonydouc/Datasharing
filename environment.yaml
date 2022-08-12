@@ -1,0 +1,17 @@
+name: powanalysis
+channels:
+  - defaults
+dependencies:
+  - python=3.6
+  - numpy=1.15.4
+  - pandas=0.24.0
+  - bokeh=1.2.0
+  - spyder=3.3.6
+  - scipy=1.1.0
+  - statsmodels=0.11.0
+  - xlrd=1.1.0
+  - openpyxl
+  - botocore=1.20.97
+  - boto=2.49
+  - boto3=1.17.97
+  - networkx=2.5
