@@ -30,4 +30,4 @@ if __name__ == '__main__':
     keep_journal = [None, None, None, None, top31]
     
     for method, drop_outlier, keep_journal in zip(methods, drop_outliers, keep_journal):
-        run_local(method, drop_outlier, keep_journal, suffix='test')
+        run_local(method, drop_outlier, keep_journal)
