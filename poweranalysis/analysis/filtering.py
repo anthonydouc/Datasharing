@@ -116,7 +116,7 @@ def filter_for_reporting(data):
                  'Doi',
                  'Adequate_2',      
                  'Author group share of estimates',
-                 'No. Lost editors.'
+                 'No. lost editors.'
                  ]
 
     editor_cols = [c for c in data.columns if ('Editor_' or 'Co-editor') in c]
