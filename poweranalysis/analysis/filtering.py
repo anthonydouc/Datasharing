@@ -119,7 +119,7 @@ def filter_for_reporting(data):
                  'No. lost editors'
                  ]
 
-    editor_cols = [c for c in data.columns if ('Editor_' or 'Co-editor_') in c]
+    editor_cols = [c for c in data.columns if ('Editor_'  in c) or ('Co-editor_' in c)]
     
     drop_cols += editor_cols
 
