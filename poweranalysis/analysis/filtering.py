@@ -112,9 +112,17 @@ def filter_for_reporting(data):
                  'significant',
                  'Power_gt_29',
                  'Sig_pow_29',
-                 'index'
+                 'index',
+                 'Doi',
+                 'Adequate_2',      
+                 'Author group share of estimates'
                  ]
 
+    editor_cols = [c for c in data.columns if ('Editor_' or 'Co-editor') in c]
+    
+    drop_cols += editor_cols
+
     drop_cols = [c for c in drop_cols if c in data.columns]
+    
     data = data.drop(drop_cols, axis=1)
     return data
