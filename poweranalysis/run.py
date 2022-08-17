@@ -26,7 +26,7 @@ def run_local(method: str, drop_outliers=True, keep_journals=None,
 
     output_dir = get_outputs_dir()
 
-    if (method == 'wls') and ((keep_journals is not None) or (drop_outliers == False)):
+    if (method == 'wls') and ((keep_journals is None) or (drop_outliers)):
         data_sharing_summaries(output_dir, method, suffix, all_data, reg_results)
 
     journal_data_subsets(output_dir, method, suffix, all_data)
