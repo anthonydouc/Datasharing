@@ -5,7 +5,6 @@ This repository contains the python code used in the paper **The Significance of
 1. Clone the package from github to a local directory.
 2. Add the full path to the cloned repository to your PYTHONPATH. The full path will be something similar to: `C:\Users\User\....\Datasharing\"`
 3. Install the default anaconda environment, or ensure your python version and package versions are compatible with the requirements.
-4. Ensure you have downloaded all datasets, and made them available at `Datasharing\data\group1` (you will need to create this folder).
 
 #### Using the default anaconda environment
 
