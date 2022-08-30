@@ -522,7 +522,7 @@ def get_all_data(readdir: str='../data/group1/', keep_journals: list=None,
 
 def get_data_fin(keep_journals):
 
-    data = pd.read_excel('../data/group1/All Data.xlsx', nrows=100)
+    data = pd.read_excel('../data/group1/All Data.xlsx')
     
     data = filter_data(data, keep_journals)
     
