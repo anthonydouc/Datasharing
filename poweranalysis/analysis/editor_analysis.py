@@ -94,12 +94,12 @@ def editor_changes(data: pd.DataFrame) -> pd.DataFrame:
 
     # Set missing values to zero on a journal by journal basis.
     data['No. new editors'] = (data
-                               .groupby('Journal')['No. new editors']
+                               .groupby(['Journal', 'yearsubmitted'])['No. new editors']
                                .fillna(method='ffill')
                                .fillna(0))
 
     data['No. lost editors'] = (data
-                                .groupby('Journal')['No. lost editors']
+                                .groupby(['Journal', 'yearsubmitted'])['No. lost editors']
                                 .fillna(method='ffill')
                                 .fillna(0))
 
