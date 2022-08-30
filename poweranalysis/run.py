@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from .analysis import (get_all_data,
+                       get_data_fin,
                        estimate_all,
                        filter_for_reporting)
 
@@ -18,8 +19,10 @@ def run_local(method: str, drop_outliers=True, keep_journals=None,
 
     print(f'Running with method={method}')
 
-    all_data = get_all_data(keep_journals=keep_journals)
+ #   all_data = get_all_data(keep_journals=keep_journals)
 
+    all_data = get_data_fin(keep_journals)
+    
     all_data, reg_results = estimate_all(all_data, method, drop_outliers, suffix)
 
     all_data = filter_for_reporting(all_data)
